@@ -35,6 +35,8 @@ ul {
     --shadow-box-portfolio-2: rgba(0, 0, 0, 0.06);
     --shadow-box-portfolio-3: rgba(0, 0, 0, 0.16);
     --icon-background: rgba(255, 255, 255, 0.1);
+    --portfolio-background: rgba(33, 150, 243, 0.9);
+    --background-overlay: rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -160,6 +162,23 @@ svg {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+}
+
+/* Aktywne guziczki*/
+.nav-list-item.is-active {
+    color: var(--blue);
+    position: relative;
+}
+
+.nav-list-item.is-active:after {
+    content: '';
+    position: absolute;
+    transform: translateY(46px);
+    left: 0px;
+    width: 53px;
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 2px;
 }
 
 /* FOOTER */
@@ -547,4 +566,46 @@ svg {
 .client-icons a:focus {
     color: var(--blue);
     outline-color: var(--blue);
+}
+
+/* =MOdal łindoł= */
+
+.modal.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    height: 581px;
+    background-color: var(--font-white);
+    border-radius: 4px;
+    box-shadow: 0 0 0 100vw var(--background-overlay);
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+    border: 1px solid var(--close-circle);
+    background-color: var(--font-white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-close svg {
+    display: block;
 }

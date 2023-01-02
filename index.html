@@ -31,8 +31,12 @@
                     <!--lista menu-->
                     <nav>
                         <ul class="nav-list">
-                            <li>
-                                <a class="nav-list-item" href="#">Agencja</a>
+                            <li class="is-active">
+                                <a
+                                    class="nav-list-item is-active"
+                                    href="index.html"
+                                    >Agencja</a
+                                >
                             </li>
                             <li>
                                 <a class="nav-list-item" href="portfolio.html"
@@ -76,7 +80,11 @@
             <section class="heading section">
                 <div class="container">
                     <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                    <button type="button" class="service-button">
+                    <button
+                        data-modal-open
+                        type="button"
+                        class="service-button"
+                    >
                         Zamów usługę
                     </button>
                 </div>
@@ -548,6 +556,13 @@
                 </div>
             </div>
         </footer>
+        <div class="modal is-hidden" data-modal>
+            <button class="modal-close" data-modal-close>
+                <svg width="11" height="11">
+                    <use href="images/close.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
         <script src="./modal.js"></script>
     </body>
 </html>
