@@ -1,4 +1,5 @@
 /* = Globalne = */
+
 h1,
 h2,
 h3,
@@ -38,6 +39,8 @@ ul {
     --portfolio-background: rgba(33, 150, 243, 0.9);
     --background-overlay: rgba(0, 0, 0, 0.2);
     --blue-overlay: rgba(33, 150, 243, 0.9);
+    --description-box-background: rgba(47, 48, 58, 0.8);
+    --close-circle: rgba(0, 0, 0, 0.1);
 }
 
 *,
@@ -72,6 +75,7 @@ svg {
 }
 
 /* = Nav+Footer = */
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -80,9 +84,11 @@ svg {
     text-decoration: none;
     color: var(--blue);
 }
+
 .studio-black {
     color: var(--logo-black);
 }
+
 .studio-white {
     color: var(--font-white);
 }
@@ -105,6 +111,7 @@ svg {
     justify-content: space-between;
     align-items: center;
     gap: 93px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list {
@@ -119,13 +126,16 @@ svg {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .envelope {
     width: 16px;
     height: 12px;
     fill: currentColor;
     margin-right: 10px;
 }
+
 .phone {
     width: 10px;
     height: 16px;
@@ -139,6 +149,7 @@ svg {
     line-height: 1.17;
     color: var(--font-black);
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list a:hover,
@@ -152,6 +163,7 @@ svg {
     line-height: 1.17;
     color: var(--font-gray);
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover,
 .contact:focus {
@@ -224,6 +236,7 @@ svg {
     font-size: 14px;
     line-height: 1.71;
     width: fit-content;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:hover,
@@ -260,6 +273,7 @@ svg {
     background-color: var(--icon-background);
     border-radius: 50%;
     color: var(--font-white);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-join-us-icons svg {
@@ -277,6 +291,7 @@ svg {
 /* = Main Portfolio = */
 
 /* = Guziki Kategori = */
+
 .category-buttons {
     display: flex;
     justify-content: center;
@@ -298,6 +313,7 @@ svg {
     padding-top: 6px;
     padding-bottom: 6px;
     margin: 0px 4px 50px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -436,10 +452,12 @@ svg {
     height: 101px;
     text-align: center;
 }
+
 .icon-article {
     width: 70px;
     height: 70px;
 }
+
 .article-images {
     padding: 25px 100px;
     background-color: var(--button-color);
@@ -482,6 +500,21 @@ svg {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+}
+
+/* = Texty na zdjęciach czym sie zajmujemy */
+
+.picture-description {
+    text-align: center;
+    transform: translateY(-70px);
+    background-color: var(--description-box-background);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--font-white);
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px 0;
 }
 
 /* = Team = */
@@ -558,6 +591,7 @@ svg {
     padding: 12px;
     color: var(--icon-color);
     border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icons svg {
@@ -595,6 +629,7 @@ svg {
     outline: 1px solid var(--icon-color);
     display: inline-block;
     color: var(--icon-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icons svg {
@@ -624,7 +659,7 @@ svg {
     top: 50%;
     left: 50%;
     transition-property: opacity, transform;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
     transition-duration: 500ms;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
@@ -650,4 +685,6 @@ svg {
 
 .modal-close svg {
     display: block;
+    width: 11px;
+    height: 11px;
 }
