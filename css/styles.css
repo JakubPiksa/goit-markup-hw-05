@@ -660,7 +660,7 @@ svg {
     left: 50%;
     transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
-    transition-duration: 500ms;
+    transition-duration: 450ms;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
@@ -685,6 +685,4 @@ svg {
 
 .modal-close svg {
     display: block;
-    width: 11px;
-    height: 11px;
 }
