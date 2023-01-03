@@ -672,22 +672,23 @@ svg {
 
 .modal-close {
     position: absolute;
-    display: flex;
-    justify-content: flex-end;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
-    padding: 9px;
     border: 1px solid var(--close-circle);
     background-color: var(--font-white);
     border-radius: 50%;
     cursor: pointer;
+    align-items: baseline;
 }
 
 .modal-close svg {
     display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+}
 
-    width: 11px;
-    height: 11px;
+.modal {
 }
