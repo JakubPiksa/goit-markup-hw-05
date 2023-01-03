@@ -647,14 +647,14 @@ svg {
 
 /* = MOdal łindoł = */
 
-.modal.is-hidden {
+.backdrop.is-hidden {
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.4);
 }
 
-.modal {
+.backdrop {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -672,6 +672,8 @@ svg {
 
 .modal-close {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
     top: 8px;
     right: 8px;
     width: 30px;
@@ -684,7 +686,8 @@ svg {
 }
 
 .modal-close svg {
-    display: block;
+    display: flex;
+
     width: 11px;
     height: 11px;
 }
