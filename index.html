@@ -33,18 +33,22 @@
                         <ul class="nav-list">
                             <li class="is-active">
                                 <a
-                                    class="nav-list-item is-active"
+                                    class="nav-list-item nav-agency is-active"
                                     href="index.html"
                                     >Agencja</a
                                 >
                             </li>
                             <li>
-                                <a class="nav-list-item" href="portfolio.html"
+                                <a
+                                    class="nav-list-item nav-portfolio"
+                                    href="portfolio.html"
                                     >Portfolio</a
                                 >
                             </li>
                             <li>
-                                <a class="nav-list-item" href="#">Kontakt</a>
+                                <a class="nav-list-item nav-contact" href="#"
+                                    >Kontakt</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -567,13 +571,8 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button
-                    class="modal-close"
-                    width="18px"
-                    height="18px"
-                    data-modal-close
-                >
-                    <svg>
+                <button class="modal-close" data-modal-close>
+                    <svg width="18px" height="18px">
                         <use href="images/cross.svg#cross"></use>
                     </svg>
                 </button>
