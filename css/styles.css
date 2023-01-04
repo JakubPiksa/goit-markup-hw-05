@@ -178,7 +178,7 @@ svg {
     gap: 50px;
 }
 
-/* = Aktywne guziczki = */
+/* = Aktywne guziczki :( = */
 
 .nav-list-item.is-active {
     color: var(--blue);
